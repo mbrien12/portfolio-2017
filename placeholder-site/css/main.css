@@ -1,0 +1,36 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px
+}
+
+h2 {
+    font-size: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: red;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
