@@ -102,6 +102,7 @@ HEADER AND NAV
 body {
     font-family: 'Karla', sans-serif;
     margin: 20px;
+
 }
 
 nav {
@@ -135,6 +136,10 @@ nav li a {
     font-weight: bold;
 }
 
+nav li a:hover {
+    color: grey;
+}
+
 a {
     color: #222;
 }
@@ -158,16 +163,17 @@ h2 {
     font-size: 36px;
 }
 
+.main {
+    margin-bottom: 30px;
+}
+
+
+.main a {
+    text-decoration: none;
+}
+
 h3 {
     font-size: 25px
-}
-
-.colour {
-    color: #B80065;
-}
-
-.colour-secondary {
-    color: #FFA0D7;
 }
 
 
@@ -187,7 +193,8 @@ h3 {
 
 .link {
     color: #222;
-    margin-left: 30px;
+    margin-left: 10px;
+    font-size: 20px;
 }
 
 .link:hover {
@@ -196,7 +203,7 @@ h3 {
  
 
 .focus ul {
-    list-style: square;
+    list-style: none;
 
 }
 
@@ -205,6 +212,20 @@ h3 {
     margin-bottom: 10px;
 }
 
+/* ==========================================================================
+Footer
+   ========================================================================== */
+
+   footer {
+       color: white;
+       background-color: black;
+   }
+
+   footer p {
+       text-align: right;
+       font-size: 30px;
+
+   }
 
 
 /* ==========================================================================
