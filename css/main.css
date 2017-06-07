@@ -99,13 +99,15 @@ textarea {
 HEADER AND NAV
    ========================================================================== */
 
-
+html {
+    height: 100%;
+}
 
 body {
     font-family: 'Karla', sans-serif;
     margin: 20px;
-
 }
+
 
 nav {
     border-bottom-style: solid;
@@ -140,7 +142,7 @@ nav li a {
 }
 
 nav li a:hover {
-    color: grey;
+    color: #FF69B4;
 }
 
 a {
@@ -148,7 +150,7 @@ a {
 }
 
 a:hover {
-    color: #B80065;
+    color: #FF69B4;
 }
 
 #header-name {
@@ -166,6 +168,9 @@ h2 {
     font-size: 36px;
 
 }
+
+
+
 
 .main {
     margin-bottom: 30px;
@@ -203,7 +208,7 @@ h2 {
 }
 
 .link:hover {
-    color: grey;
+    color: #FF69B4;
 }
  
 
@@ -222,11 +227,44 @@ h3 {
 Footer
    ========================================================================== */
 
-   footer {
-       color: white;
-       background-color: black;
-       overflow: hidden;
-   }
+
+
+
+footer {
+    position: relative;
+    background: black;
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+footer:before {
+    position: absolute;
+    content:'';
+
+
+}
+
+.diagonal {
+    z-index: 1;
+    padding: 1em;
+    background: black;
+
+}
+.diagonal:before {
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-4deg);
+    -webkit-transform-origin: 3% 0;
+    transform-origin: 3% 0;
+    top: 0;
+    left: -25%;
+    z-index: -1;
+    width: 150%;
+    height: 100%;
+    background: inherit;   
+
+}
 
    footer p {
        text-align: right;
@@ -247,6 +285,8 @@ Footer
    #footer-social i {
        margin-right: 50px;
    }
+
+   
 
 
 /* ==========================================================================
