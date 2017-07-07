@@ -173,12 +173,13 @@ h2 {
 
 
 .main {
-    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-bottom: 60px;
 }
 
 
 .main a {
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 #focus-title {
@@ -229,13 +230,14 @@ Footer
 
 
 
-/* Digonal footer - not working at the moment  - NEED TO FIX
+/* Digonal footer - not working at the moment  - NEED TO FIX */ 
 footer {
     position: relative;
     background: black;
     color: #fff;
     text-align: center;
     margin-top: 50px;
+   
 
 }
 
@@ -250,8 +252,8 @@ footer:before {
     z-index: 1;
     padding: 1em;
     background: black;
-
 }
+
 .diagonal:before {
     -webkit-transform: rotate(-5deg);
     transform: rotate(-4deg);
@@ -266,9 +268,8 @@ footer:before {
 
 }
 
-*/ 
 
-/* This is default footer while trying to fix diagonal */ 
+
 
 footer {
     background-color: #000000;
