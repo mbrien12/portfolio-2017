@@ -99,13 +99,16 @@ textarea {
 HEADER AND NAV
    ========================================================================== */
 
+
 html {
+    overflow: hidden;
     height: 100%;
 }
 
 body {
     font-family: 'Karla', sans-serif;
-    margin: 20px;
+    height: 100%;
+    overflow: auto;
 }
 
 
@@ -113,6 +116,8 @@ nav {
     border-bottom-style: solid;
     border-bottom-width: thin;
     margin-bottom: 40px;
+    margin-top: 30px;
+    padding-left: 30px;
 }
 
 ul {
@@ -170,36 +175,40 @@ h2 {
 }
 
 
-
-
-.main {
+.container {
     margin-top: 30px;
-    margin-bottom: 60px;
+    width: 50%;
+    text-align: left;
 }
 
 
-.main a {
+.container a {
     text-decoration: underline;
 }
 
 #focus-title {
     text-align: center;
+    margin-top: 50px;
     margin-bottom: 50px;
 }
 
 
 .section {
   padding-top: 10px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 .section-heading,
 .section-description {
   margin-bottom: 1.2rem;
 }
 
-.center {
-    width: 50%;
-    text-align: left;
+
+
+ul {
+    text-align: center;
 }
 
 .link {
@@ -230,60 +239,22 @@ Footer
 
 
 
-/* Digonal footer - not working at the moment  - NEED TO FIX */ 
-footer {
-    position: relative;
-    background: black;
-    color: #fff;
-    text-align: center;
-    margin-top: 50px;
-   
-
-}
-
-footer:before {
-    position: absolute;
-    content:'';
-
-
-}
-
-.diagonal {
-    z-index: 1;
-    padding: 1em;
-    background: black;
-    height:
-}
-
-.diagonal:before {
-    -webkit-transform: rotate(-5deg);
-    transform: rotate(-4deg);
-    -webkit-transform-origin: 3% 0;
-    transform-origin: 3% 0;
-    top: 0;
-    left: -25%;
-    z-index: -1;
-    width: 150%;
-    height: 100%;
-    background: inherit;   
-
-}
-
-
 
 
 footer {
     background-color: #000000;
     color: white;
     margin-top: 60px;
+    width: 100%;
+
 }
 
 
    footer p {
        text-align: right;
        font-size: 30px;
-       margin-right: 50px;
-       margin-top: 40px;
+       margin-right: 80px;
+       margin-top: 60px;
        padding-top: 10px;
 
    }
@@ -293,11 +264,17 @@ footer {
        flex-direction: row;
        justify-content: center;
        margin-top: 10px;
+       margin-bottom: 0;
+       padding-bottom: 30px;
    }
 
    #footer-social a {
        color: white;
    }
+
+   #footer-social a:hover {
+    color: #FF69B4;
+}
 
    #footer-social i {
        margin-right: 50px;
