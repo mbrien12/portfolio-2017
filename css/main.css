@@ -185,6 +185,17 @@ h2 {
 }
 
 
+#profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#profile {
+    height: 300px;
+}
+
+
 .container {
     margin-top: 30px;
     width: 50%;
@@ -405,7 +416,10 @@ footer {
            margin-right: 50px;
            margin-bottom: 0;
        }
-
+       
+       #profile {
+           height: 150px;
+       }
     
 
       
