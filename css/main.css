@@ -113,28 +113,20 @@ body {
 
 
 nav {
-    border-bottom-style: solid;
-    border-bottom-width: thin;
-    margin-bottom: 40px;
-    margin-top: 30px;
-    padding-left: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 50px;
 }
 
 ul {
     list-style: none;
 }
 
-
-nav ul {
-    margin: 0;
-    padding: 0;
-    margin-bottom: 10px;
-
+.header-links-right a {
+    margin: 10px;
 }
 
-nav li {
-    display: inline-block;
-}
 
 nav li a {
     display: block;
@@ -158,11 +150,7 @@ a:hover {
     color: #FF69B4;
 }
 
-#header-name {
-    float: left;
-    font-size: 30px;
-    margin-right: 300px;
-}
+
 
 
 /* ==========================================================================
